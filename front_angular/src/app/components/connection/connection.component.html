@@ -1,0 +1,15 @@
+<form [formGroup]="fg" (ngSubmit)="onSubmit()" class="connect">
+    <fieldset>
+      <legend>Connexion</legend>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Adresse email</label>
+        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="toto.machin@hotmail.com" formControlName="email">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Mot de passe</label>
+        <input type="password" class="form-control" id="inputPassword" placeholder="••••••••" formControlName="password">
+        <small id="emailHelp" class="form-text text-muted">Ne partagez jamais votre mot de passe à qui que ce soit</small>
+      </div>
+      <button class="btn btn-secondary" type="submit">Valider</button>
+    </fieldset>
+  </form>

@@ -1,0 +1,63 @@
+<table *ngIf="isConnected" class="table table-hover">
+    <thead class="thread">
+      <tr>
+        <th scope="col">Suivis</th>
+        <th scope="col">Sujet</th>
+        <th scope="col">Auteur</th>
+        <th scope="col">Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table-dark">
+        <th scope="row">Angular</th>
+        <td>Sujet parlant d'angular</td>
+        <td>John</td>
+        <td>11-12-20</td>
+      </tr>
+      <tr class="table-dark">
+        <th scope="row">React</th>
+        <td>Sujet parlant de React</td>
+        <td>John</td>
+        <td>11-12-20</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="table table-hover">
+    <thead class="thread">
+      <tr>
+        <th scope="col">Général</th>
+        <th scope="col">Sujet</th>
+        <th scope="col">Auteur</th>
+        <th scope="col">Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table-dark">
+        <th scope="row">Angular</th>
+        <td>Sujet parlant d'angular</td>
+        <td>John</td>
+        <td>11-12-20</td>
+      </tr>
+      <tr class="table-dark">
+        <th scope="row">React</th>
+        <td>Sujet parlant de React</td>
+        <td>John</td>
+        <td>11-12-20</td>
+      </tr>
+      <tr class="table-dark">
+        <th scope="row">Javascript</th>
+        <td>Sujet parlant de Javascript</td>
+        <td>John</td>
+        <td>11-12-20</td>
+      </tr>
+      <tr class="table-dark">
+        <th scope="row">Rien</th>
+        <td>Sujet parlant de rien</td>
+        <td>John</td>
+        <td>11-12-20</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <router-outlet></router-outlet>

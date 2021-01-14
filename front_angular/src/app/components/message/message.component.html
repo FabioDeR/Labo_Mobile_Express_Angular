@@ -1,0 +1,39 @@
+<div class="messages">
+    <!-- Exemple de message simple-->
+    <div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
+        <div class="card-header">Bienvenue {{date}}</div>
+        <div class="card-body">
+        <h4 class="card-title">Message de bienvenue</h4>
+        <p class="card-text">Vous vous êtes inscrit sur notre site! Merci!</p>
+        </div>
+    </div>
+
+    <!-- Avertissement d'un message signalé -->
+    <div class="card text-white bg-warning mb-3" style="max-width: 20rem;">
+        <div class="card-header">Message signalé {{date}}</div>
+        <div class="card-body">
+        <h4 class="card-title">Un de vos message a été signalé</h4>
+        <p class="card-text">L'un de nos modérateur va vérifier si votre message répond ou non à notre charte.<br>
+        Vous serez prévenu de sa décision.</p>
+        </div>
+    </div>
+
+    <!-- Avertissement de message gardé -->
+    <div class="card text-white bg-danger mb-3" style="max-width: 20rem;">
+        <div class="card-header">Message supprimé {{date}}</div>
+        <div class="card-body">
+        <h4 class="card-title">Votre message a été analysé</h4>
+        <p class="card-text">Attention, après 3 messages supprimés par nos modérateurs vous serez banni!</p>
+        </div>
+    </div>
+
+    <!-- Avertissement de message supprimé -->
+    <div class="card text-white bg-success mb-3" style="max-width: 20rem;">
+        <div class="card-header">Message gardé {{date}}</div>
+        <div class="card-body">
+        <h4 class="card-title">Votre message a été analysé</h4>
+        <p class="card-text">L'un de nos modérateur à juger que votre message répond à notre charte<br>
+            Tout va bien !</p>
+        </div>
+    </div>
+</div>

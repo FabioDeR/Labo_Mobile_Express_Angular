@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand">LaboForum</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor02">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/index">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item" *ngIf="isConnected">
+        <a class="nav-link" routerLink="/message">Messages <span class="badge badge-pill badge-danger">4</span></a>
+      </li>
+
+    </ul>
+    <div *ngIf="!isConnected; else elseBlock" class="form-inline my-2 my-lg-0">
+      <a class="nav-link btn btn-secondary" routerLink="/connection">Connexion</a>
+      <a class="nav-link btn btn-secondary" routerLink="/register">Inscription</a>
+    </div>
+    <ng-template #elseBlock>
+      <a class="nav-link btn btn-secondary my-2 my-sm-0" (click)="logout()">Déconnexion</a>
+      <div *ngIf="isAdmin">
+        <a class="nav-link btn btn-primary my-2 my-sm-0" routerLink="/administration">Administration</a>
+      </div>
+    </ng-template>
+  </div>
+</nav>
+<router-outlet></router-outlet>
